@@ -29,6 +29,7 @@ date <- c("May 29, 2025", "May 30, 2025")
 Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)", 
 "[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)")
 cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "")
+reading <- c("")
 exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)", "Exercise 2.6")
 df <- tibble(wkno, date, Topic, cheatsheet,reading, exercise)
 colnames(df) <- c("Week No.", "Date", "Topic", "Cheatsheet", "Reading", "Exercise"
