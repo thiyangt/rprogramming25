@@ -1,0 +1,65 @@
+---
+title: "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R"
+---
+
+## Lecturer-in-charge
+
+[Dr Thiyanga S. Talagala](https://thiyanga.netlify.app/)
+
+## Email
+
+ttalagala\@sjp.ac.lk
+
+## Policies and regulations
+
+To access important information regarding the unit, please join the Google Classroom. You must carefully read the “[Course Information](https://hellor.netlify.app/2021/week0onsite#1)” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information” slides.
+
+## Course outline
+
+Available on Google Classroom
+
+
+
+## Weekly schedule: Lectures 👩‍🏫
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+wkno <- c(1, 2)
+date <- c("May 29, 2025", "May 30, 2025")
+Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)", 
+"[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)")
+cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "")
+exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)", "Exercise 2.6")
+df <- tibble(wkno, date, Topic, cheatsheet,reading, exercise)
+colnames(df) <- c("Week No.", "Date", "Topic", "Cheatsheet", "Reading", "Exercise"
+                  )
+df |> knitr::kable()
+```
+
+## Mid-Semester Examination
+
+TBA
+
+
+
+## Weekly schedule: Computer Practical 🖥️
+
+-   Monday, 8am - 9.45am
+
+-   Monday, 3pm - 5pm
+
+```{r, echo=FALSE}
+wkno <- c(1)
+date <- c("June 02, 2025")
+Exercise <- c("[Exercise 1.12](https://thiyangt.github.io/rbook/intro.html)", "[Exercise 2.6](https://thiyangt.github.io/rbook/chap2.html)")
+dfp <- data.frame(wkno, date, Exercise)
+colnames(dfp) <- c("Week No.", "Date", "Exercise")
+dfp |> knitr::kable()
+
+```
+
+## R and RStudio Installation: Video Links
+
+[Installing R](https://www.youtube.com/watch?v=aRwxsAEoRzs&list=PL7Bw8wPdOZXlEVRbvYmP59SapfjfOy5pS&index=1)
+
+[Installing RStudio](https://www.youtube.com/watch?v=Q1NRj2Dzdn0&t=18s)

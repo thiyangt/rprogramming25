@@ -1,0 +1,147 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Working with R codes
+
+# 1
+
+```{r}
+set.seed(20205)
+x <- rnorm(10)
+summary(x)
+
+```
+
+# 2
+
+```{r, comment=NA}
+set.seed(20205)
+x <- rnorm(10)
+summary(x)
+
+```
+
+# 3
+
+
+```{r, comment=NA, echo=FALSE}
+set.seed(20205)
+x <- rnorm(10)
+summary(x)
+```
+
+# 4
+
+```{r, comment=NA, eval=FALSE}
+set.seed(20205)
+x <- rnorm(10)
+summary(x)
+```
+
+# 5
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+qplot(data=iris, x=Sepal.Length, y=Sepal.Width, geom="point")
+```
+
+# 6
+
+```{r, message=FALSE, warning=FALSE, fig.cap="Figure 1: Scatterplot of Sepal Width vs Sepal Length"}
+
+qplot(data=iris, x=Sepal.Length, y=Sepal.Width, geom="point")
+```
+
+# 7
+
+
+```{r, message=FALSE, warning=FALSE, out.width="50%", out.height="50%"}
+
+qplot(data=iris, x=Sepal.Length, y=Sepal.Width, geom="point")
+```
+
+
+# 8
+
+
+```{r, message=FALSE, warning=FALSE, fig.width=8, fig.height=5}
+
+qplot(data=iris, x=Sepal.Length, y=Sepal.Width, geom="point")
+```
+
+
+
+# 6. Mathematical Formulae
+
+The general formula for the probability density function of the normal distribution with mean $\mu$ and variance $\sigma$ is given by
+
+$$
+f_X(x) = \frac{1}{\sigma\sqrt{(2\pi)}} e^{-(x-\mu)^2/2\sigma^2}.
+$$
+
+# 7. Tables
+
+**Method 1**
+
+```{r}
+library(knitr)
+kable(iris[1:5,], caption="A knitr kable 1")
+
+```
+
+
+```{r}
+id <- c(1, 2, 3)
+Grade <- c("A", "B", "C")
+df <- data.frame(id=id, Grade=Grade)
+kable(df, caption="Table 1: Grades")
+```
+
+
+```{r}
+kable(summary(iris), caption="A knitr kable 2")
+
+```
+
+
+# 
+
+Colons can be used to align columns.
+
+| Column 1 | Column 2 | Column 3 |
+|----------|:--------:|---------:|
+| Tim      | Positive |      USA |
+| Jane     | Negative |       UK |
+| Cathy    | Negative |      AUS |
+
+There must be at least 3 dashes separating each header cell. The outer pipes (\|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+
+# Include an Image
+
+![](img.png)
+
+
+
+```{r, out.width="50%", fig.cap="Descriptive Statistics vs Sampling Statistics"}
+knitr::include_graphics("img.png")
+```
+
+
+```{r}
+library(here)
+knitr::include_graphics(here("rmarkdown", "fig", "sy1.jpg"))
+
+```
+
+
+```{r}
+knitr::include_graphics("fig/sy1.jpg")
+
+```
+
