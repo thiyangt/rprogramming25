@@ -18,14 +18,12 @@ To access important information regarding the unit, please join the Google Class
 
 Available on Google Classroom
 
-
-
 ## Weekly schedule: Lectures 👩‍🏫
 
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)
 wkno <- c(1, 2)
-date <- c("May 29, 2025", "May 30, 2025")
+date <- c("May 29, 2025", "June 05, 2025")
 Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)", 
 "[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)")
 cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "")
@@ -41,8 +39,6 @@ df |> knitr::kable()
 
 TBA
 
-
-
 ## Weekly schedule: Computer Practical 🖥️
 
 -   Monday, 8am - 9.45am
@@ -50,9 +46,9 @@ TBA
 -   Monday, 3pm - 5pm
 
 ```{r, echo=FALSE}
-wkno <- c(1)
-date <- c("June 02, 2025")
-Exercise <- c("[Exercise 1.12](https://thiyangt.github.io/rbook/intro.html)", "[Exercise 2.6](https://thiyangt.github.io/rbook/chap2.html)")
+wkno <- c("1", "")
+date <- c("June 02, 2025", "")
+Exercise <- c("Demonstration Slides 39-41","[Exercise 1.12](https://thiyangt.github.io/rbook/intro.html)")
 dfp <- data.frame(wkno, date, Exercise)
 colnames(dfp) <- c("Week No.", "Date", "Exercise")
 dfp |> knitr::kable()
