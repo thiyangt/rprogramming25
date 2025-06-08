@@ -45,10 +45,12 @@ TBA
 
 -   Monday, 3pm - 5pm
 
+- Please do not swap your allocated slots. Kindly attend at your stipulated time.
+
 ```{r, echo=FALSE}
-wkno <- c("1", "")
-date <- c("June 02, 2025", "")
-Exercise <- c("Demonstration Slides 39-41","[Exercise 1.12](https://thiyangt.github.io/rbook/intro.html)")
+wkno <- c("1", "", "2", "")
+date <- c("June 02, 2025", "", "June 9, 2025", "")
+Exercise <- c("Demonstration Slides 39-41","[Exercise 1.12](https://thiyangt.github.io/rbook/intro.html)", "[Exercise 2.6](https://thiyangt.github.io/rbook/chap2.html)", "[Exercise 2.10-i](https://thiyangt.github.io/rbook/chap2.html)")
 dfp <- data.frame(wkno, date, Exercise)
 colnames(dfp) <- c("Week No.", "Date", "Exercise")
 dfp |> knitr::kable()
