@@ -22,13 +22,15 @@ Available on Google Classroom
 
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)
-wkno <- c(1, 2)
-date <- c("May 29, 2025", "June 05, 2025")
+wkno <- c(1, 2,3, "", "", 4)
+date <- c("May 29, 2025", "June 05, 2025", "June 12, 2025", "", "", "June 19, 2025")
 Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)", 
-"[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)")
-cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "")
+"[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)",
+"[Built-in functions in R: Anatomy](https://hellor2023.netlify.app/slides/l32021#1)", "[Working with built-in functions in R](https://hellor2023.netlify.app/slides/l42022#1)-removed qplot (qplot() is now deprecated)",  "[User-defined functions](https://hellor.netlify.app/slides/l52021#1)",
+"[Control Structures](https://hellor2023.netlify.app/slides/l62021#1)")
+cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "","", "", "", "")
 reading <- c("")
-exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)", "Exercise 2.6")
+exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)", "Exercise 2.6", "", "", "", "")
 df <- tibble(wkno, date, Topic, cheatsheet,reading, exercise)
 colnames(df) <- c("Week No.", "Date", "Topic", "Cheatsheet", "Reading", "Exercise"
                   )
@@ -45,7 +47,7 @@ TBA
 
 -   Monday, 3pm - 5pm
 
-- Please do not swap your allocated slots. Kindly attend at your stipulated time.
+-   Please do not swap your allocated slots. Kindly attend at your stipulated time.
 
 ```{r, echo=FALSE}
 wkno <- c("1", "", "2", "")
