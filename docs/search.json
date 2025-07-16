@@ -60,14 +60,14 @@
     "href": "index.html#weekly-schedule-lectures",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
     "section": "Weekly schedule: Lectures 👩‍🏫",
-    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nMay 29, 2025\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nJune 05, 2025\nData Structures in R: Vector creation\n\n\nExercise 2.6\n\n\n3\nJune 12, 2025\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n\n\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n\n\nUser-defined functions\n\n\n\n\n\n4\nJune 19, 2025\nControl Structures"
+    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nMay 29, 2025\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nJune 05, 2025\nData Structures in R: Vector creation\n\n\nExercise 2.6\n\n\n3\nJune 12, 2025\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n\n\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n\n\nUser-defined functions\n\n\n\n\n\n4\nJune 19/26, 2025\nControl Structures\n\n\n\n\n\n7\nJune 30, 2025\n[RMarkdown](https://hellor.netlify.app/slides/hellor.rmarkdown#1\n\n\n\n\n\n8\nJuly 17, 2025\nIntroduction to tidyverse\n\n\n\n\n\n9\n\nData manipulation with dplyr"
   },
   {
     "objectID": "index.html#mid-semester-examination",
     "href": "index.html#mid-semester-examination",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
     "section": "Mid-Semester Examination",
-    "text": "Mid-Semester Examination\nTBA"
+    "text": "Mid-Semester Examination\nJuly 31, 2025: Please see the website for more information."
   },
   {
     "objectID": "index.html#weekly-schedule-computer-practical",

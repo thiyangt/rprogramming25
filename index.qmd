@@ -22,15 +22,15 @@ Available on Google Classroom
 
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)
-wkno <- c(1, 2,3, "", "", 4)
-date <- c("May 29, 2025", "June 05, 2025", "June 12, 2025", "", "", "June 19, 2025")
+wkno <- c(1, 2,3, "", "", 4, 7, 8, 9)
+date <- c("May 29, 2025", "June 05, 2025", "June 12, 2025", "", "", "June 19/26, 2025", "June 30, 2025", "July 17, 2025", "")
 Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)", 
 "[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)",
 "[Built-in functions in R: Anatomy](https://hellor2023.netlify.app/slides/l32021#1)", "[Working with built-in functions in R](https://hellor2023.netlify.app/slides/l42022#1)-removed qplot (qplot() is now deprecated)",  "[User-defined functions](https://hellor.netlify.app/slides/l52021#1)",
-"[Control Structures](https://hellor2023.netlify.app/slides/l62021#1)")
-cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "","", "", "", "")
+"[Control Structures](https://hellor2023.netlify.app/slides/l62021#1)", "[RMarkdown](https://hellor.netlify.app/slides/hellor.rmarkdown#1", "[Introduction to tidyverse](https://hellor.netlify.app/slides/l72021#1)", "[Data manipulation with dplyr](https://hellor.netlify.app/slides/l112021#1)")
+cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "","", "", "", "", "", "", "")
 reading <- c("")
-exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)", "Exercise 2.6", "", "", "", "")
+exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)", "Exercise 2.6", "", "", "", "", "", "","")
 df <- tibble(wkno, date, Topic, cheatsheet,reading, exercise)
 colnames(df) <- c("Week No.", "Date", "Topic", "Cheatsheet", "Reading", "Exercise"
                   )
@@ -39,7 +39,7 @@ df |> knitr::kable()
 
 ## Mid-Semester Examination
 
-TBA
+July 31, 2025: Please see the website for more information.
 
 ## Weekly schedule: Computer Practical 🖥️
 
