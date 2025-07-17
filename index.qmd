@@ -39,7 +39,7 @@ df |> knitr::kable()
 
 ## Mid-Semester Examination
 
-July 31, 2025: Please see the website for more information.
+July 31, 2025: Please see Google Classroom for more information.
 
 ## Weekly schedule: Computer Practical 🖥️
 
