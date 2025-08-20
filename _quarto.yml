@@ -10,6 +10,9 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      
+metadata:
+  google-analytics: "G-9MYT25HLDD"
 
 format:
   html:
