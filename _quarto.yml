@@ -5,15 +5,13 @@ project:
 website:
   title: "Programming and Data Analysis with R"
   site-url: "https://thiyangt.github.io/rprogramming/"
+  google-analytics: "G-9MYT25HLDD"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
       
-metadata:
-  google-analytics: "G-9MYT25HLDD"
-
 format:
   html:
     theme: darkly
