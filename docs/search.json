@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "rmarkdown/Rmarkdown_practical_lesson.html",
-    "href": "rmarkdown/Rmarkdown_practical_lesson.html",
-    "title": "Introduction to R Markdown",
-    "section": "",
-    "text": "Headings are proceed by #. The number of # at the beginning of a line indicates the level of heading (main section, sub section, sub-sub section, etc.)\nHere is an illustration."
-  },
-  {
-    "objectID": "rmarkdown/Rmarkdown_practical_lesson.html#h2-level",
-    "href": "rmarkdown/Rmarkdown_practical_lesson.html#h2-level",
-    "title": "Introduction to R Markdown",
-    "section": "H2 level",
-    "text": "H2 level\nThis is header level 2\n\nH3 level\nThis is header level 3 and so on."
-  },
-  {
-    "objectID": "rmarkdown/Rmarkdown_practical_lesson.html#more-examples",
-    "href": "rmarkdown/Rmarkdown_practical_lesson.html#more-examples",
-    "title": "Introduction to R Markdown",
-    "section": "More examples",
-    "text": "More examples\nExample 1: Fraction ()\n\\[\\frac{a}{b}=\\frac{c}{b}\\]\nExample 2: Bold math symbols\n\\[\\mathbf{(X'X)^{-1}X'Y}\\]\nExample 3: Summation, Superscript (^) and Subscript (_)\n\\[\\sum_{i=1}^{n}{x_i^2}\\]\nExample 4: Equation with multiple lines\nExample 4.1:\n[ \\[\\begin{eqnarray}\nP(|X-\\mu| &gt; k) & = & P(|X-\\mu|^2 &gt; k^2)\\\\\n& \\leq & \\frac{\\mathbb{E}\\left[|X-\\mu|^2\\right]}{k^2}\\\\\n& \\leq & \\frac{\\mathrm{Var}[X]}{k^2}\n\\end{eqnarray}\\] ]\nExample 4.2:\n[ \\[\\begin{eqnarray}\nX & \\sim & \\mathrm{N}(0,1)\\\\\nY & \\sim & \\chi^2_{n-p}\\\\\nR & \\equiv & X/Y \\sim t_{n-p}\n\\end{eqnarray}\\] ]"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
@@ -60,7 +39,7 @@
     "href": "index.html#weekly-schedule-lectures",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
     "section": "Weekly schedule: Lectures 👩‍🏫",
-    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nMay 29, 2025\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nJune 05, 2025\nData Structures in R: Vector creation\n\n\nExercise 2.6\n\n\n3\nJune 12, 2025\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\n\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\n\nUser-defined functions\n\n\n\n\n\n6\nJune 19/26, 2025\nControl Structures\n\n\n\n\n\n7\nJune 30, 2025\nRMarkdown\n\n\n\n\n\n8\nJuly 17, 2025\nIntroduction to tidyverse\n\n\n\n\n\n9\nJuly 24, 2025\nData manipulation with dplyr\n\n\n\n\n\n10\nJuly 31, 2025\nMid-Examination\n\n\n\n\n\n11\nAugust 7, 2025\nData Visualisation\n\n\n\n\n\n12\nAugust 14, 2025\nRegression Analysis\n\n\n\n\n\n\n\nReshaping Data"
+    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nMay 29, 2025\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nJune 05, 2025\nData Structures in R: Vector creation\n\n\nExercise 2.6\n\n\n3\nJune 12, 2025\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\n\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\n\nUser-defined functions\n\n\n\n\n\n6\nJune 19/26, 2025\nControl Structures\n\n\n\n\n\n7\nJune 30, 2025\nRMarkdown\n\n\n\n\n\n8\nJuly 17, 2025\nIntroduction to tidyverse\n\n\n\n\n\n9\nJuly 24, 2025\nData manipulation with dplyr\n\n\n\n\n\n10\nJuly 31, 2025\nMid-Examination\n\n\n\n\n\n11\nAugust 7, 2025\nData Visualisation\n\n\n\n\n\n12\nAugust 14, 2025\nRegression Analysis\n\n\n\n\n\n\n\nReshaping Data\n\n\n\n\n\n13\nAugust 21, 2025\nHypothesis testing\n\n\n\n\n\n\n\nHypothesis testing"
   },
   {
     "objectID": "index.html#mid-semester-examination",
@@ -82,6 +61,27 @@
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
     "section": "R and RStudio Installation: Video Links",
     "text": "R and RStudio Installation: Video Links\nInstalling R\nInstalling RStudio"
+  },
+  {
+    "objectID": "rmarkdown/Rmarkdown_practical_lesson.html",
+    "href": "rmarkdown/Rmarkdown_practical_lesson.html",
+    "title": "Introduction to R Markdown",
+    "section": "",
+    "text": "Headings are proceed by #. The number of # at the beginning of a line indicates the level of heading (main section, sub section, sub-sub section, etc.)\nHere is an illustration."
+  },
+  {
+    "objectID": "rmarkdown/Rmarkdown_practical_lesson.html#h2-level",
+    "href": "rmarkdown/Rmarkdown_practical_lesson.html#h2-level",
+    "title": "Introduction to R Markdown",
+    "section": "H2 level",
+    "text": "H2 level\nThis is header level 2\n\nH3 level\nThis is header level 3 and so on."
+  },
+  {
+    "objectID": "rmarkdown/Rmarkdown_practical_lesson.html#more-examples",
+    "href": "rmarkdown/Rmarkdown_practical_lesson.html#more-examples",
+    "title": "Introduction to R Markdown",
+    "section": "More examples",
+    "text": "More examples\nExample 1: Fraction ()\n\\[\\frac{a}{b}=\\frac{c}{b}\\]\nExample 2: Bold math symbols\n\\[\\mathbf{(X'X)^{-1}X'Y}\\]\nExample 3: Summation, Superscript (^) and Subscript (_)\n\\[\\sum_{i=1}^{n}{x_i^2}\\]\nExample 4: Equation with multiple lines\nExample 4.1:\n[ \\[\\begin{eqnarray}\nP(|X-\\mu| &gt; k) & = & P(|X-\\mu|^2 &gt; k^2)\\\\\n& \\leq & \\frac{\\mathbb{E}\\left[|X-\\mu|^2\\right]}{k^2}\\\\\n& \\leq & \\frac{\\mathrm{Var}[X]}{k^2}\n\\end{eqnarray}\\] ]\nExample 4.2:\n[ \\[\\begin{eqnarray}\nX & \\sim & \\mathrm{N}(0,1)\\\\\nY & \\sim & \\chi^2_{n-p}\\\\\nR & \\equiv & X/Y \\sim t_{n-p}\n\\end{eqnarray}\\] ]"
   },
   {
     "objectID": "rmarkdown/lesson2.html",
