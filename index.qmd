@@ -23,11 +23,11 @@ Available on Google Classroom
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)
 wkno <- c(1)
-date <- c("April 23, 2026")
-Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)")
-cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)")
-reading <- c("")
-exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)")
+date <- c("April 23, 2026", "April 30, 2026")
+Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)", "[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)")
+cheatsheet <- c("[cheatsheet](https://hellor.netlify.app/cheatsheets/baser.pdf)", "")
+reading <- c("", "")
+exercise <- c("[Exercise 1.8]( https://thiyangt.github.io/rbook/intro.html)", "")
 df <- tibble(wkno, date, Topic, cheatsheet,reading, exercise)
 colnames(df) <- c("Week No.", "Date", "Topic", "Cheatsheet", "Reading", "Exercise"
                   )
@@ -46,7 +46,7 @@ TBA
 
 -   Please do not swap your allocated slots. Kindly attend at your stipulated time.
 
-```{}
+```         
 ```
 
 ## R and RStudio Installation: Video Links
