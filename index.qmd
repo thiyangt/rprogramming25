@@ -39,7 +39,9 @@ df |> knitr::kable()
 
 ## Mid-Semester Examination
 
-July 9, 2026
+July 9, 2026  
+
+Content: From April 23, 2026 to May 21, 2026 (May 21, 2026 lecture included)
 
 ## Weekly schedule: Computer Practical 🖥️
 
