@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Prepared by Dr Thiyanga Talagala">
 
-<title>Introduction to R Markdown – Programming and Data Analysis with R</title>
+<title>Introduction to Quarto – Programming and Data Analysis with R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -204,10 +203,20 @@ window.Quarto = {
   <li><a href="#code-chunks" id="toc-code-chunks" class="nav-link" data-scroll-target="#code-chunks">5. Code Chunks</a></li>
   <li><a href="#mathematical-formulae" id="toc-mathematical-formulae" class="nav-link" data-scroll-target="#mathematical-formulae">6. Mathematical Formulae</a>
   <ul class="collapse">
-  <li><a href="#more-examples" id="toc-more-examples" class="nav-link" data-scroll-target="#more-examples">More examples</a></li>
-  </ul></li>
+  <li><a href="#more-examples" id="toc-more-examples" class="nav-link" data-scroll-target="#more-examples">More examples</a>
+  <ul class="collapse">
+  <li><a href="#example-1-fraction" id="toc-example-1-fraction" class="nav-link" data-scroll-target="#example-1-fraction">Example 1: Fraction ()</a></li>
+  <li><a href="#example-2-bold-math-symbols" id="toc-example-2-bold-math-symbols" class="nav-link" data-scroll-target="#example-2-bold-math-symbols">Example 2: Bold math symbols</a></li>
+  <li><a href="#example-3-summation-superscript-and-subscript-_" id="toc-example-3-summation-superscript-and-subscript-_" class="nav-link" data-scroll-target="#example-3-summation-superscript-and-subscript-_">Example 3: Summation, Superscript (^) and Subscript (_)</a></li>
+  <li><a href="#example-4-equation-with-multiple-lines" id="toc-example-4-equation-with-multiple-lines" class="nav-link" data-scroll-target="#example-4-equation-with-multiple-lines">Example 4: Equation with multiple lines</a></li>
   <li><a href="#example-5-parenthesis" id="toc-example-5-parenthesis" class="nav-link" data-scroll-target="#example-5-parenthesis">Example 5: Parenthesis ((…))</a></li>
-  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">7. Tables</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">7. Tables</a>
+  <ul class="collapse">
+  <li><a href="#method-1" id="toc-method-1" class="nav-link" data-scroll-target="#method-1">Method 1</a></li>
+  <li><a href="#method-2" id="toc-method-2" class="nav-link" data-scroll-target="#method-2">Method 2</a></li>
+  </ul></li>
   <li><a href="#include-an-external-image" id="toc-include-an-external-image" class="nav-link" data-scroll-target="#include-an-external-image">8. Include an External Image</a></li>
   </ul>
 </nav>
@@ -217,19 +226,13 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction to R Markdown</h1>
+<h1 class="title">Introduction to Quarto</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Prepared by Dr Thiyanga Talagala </p>
-          </div>
-  </div>
     
   
     
@@ -242,7 +245,7 @@ window.Quarto = {
 
 <section id="headings" class="level1">
 <h1>1. Headings</h1>
-<p>Headings are proceed by #. The number of # at the beginning of a line indicates the level of heading (main section, sub section, sub-sub section, etc.)</p>
+<p>Headings are preceded by <code>#</code>. The number of <code>#</code> symbols at the beginning of a line indicates the level of heading (main section, subsection, sub-subsection, etc.).</p>
 <p>Here is an illustration.</p>
 </section>
 <section id="h1-level" class="level1">
@@ -259,15 +262,17 @@ window.Quarto = {
 </section>
 <section id="text-formatting" class="level1">
 <h1>2. Text Formatting</h1>
-<p><em>This text is in italics.</em> <em>And so is this text.</em></p>
-<p><strong>This text is in bold.</strong> <strong>And so is this text.</strong></p>
+<p><em>This text is in italics.</em></p>
+<p><em>And so is this text.</em></p>
+<p><strong>This text is in bold.</strong></p>
+<p><strong>And so is this text.</strong></p>
 <p><del>This text is rendered with strikethrough.</del></p>
 </section>
 <section id="bullet-points" class="level1">
 <h1>3. Bullet Points</h1>
 <ul>
-<li><p>Item 1</p></li>
-<li><p>Item 2</p>
+<li>Item 1</li>
+<li>Item 2
 <ul>
 <li>2a</li>
 <li>2b</li>
@@ -310,15 +315,15 @@ window.Quarto = {
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
--2.1341 -1.1879  0.4502 -0.1464  0.7082  1.0402 </code></pre>
+<pre><code>NA    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+NA -2.1341 -1.1879  0.4502 -0.1464  0.7082  1.0402</code></pre>
 </div>
 </div>
 <p>Example 3: Display only the output</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
--2.1341 -1.1879  0.4502 -0.1464  0.7082  1.0402 </code></pre>
+<pre><code>NA    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+NA -2.1341 -1.1879  0.4502 -0.1464  0.7082  1.0402</code></pre>
 </div>
 </div>
 <p>Example 4: Display only the code</p>
@@ -342,14 +347,19 @@ window.Quarto = {
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">data=</span>iris, <span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Sepal.Width, <span class="at">geom=</span><span class="st">"point"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> iris,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> Sepal.Length,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> Sepal.Width,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">geom =</span> <span class="st">"point"</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: `qplot()` was deprecated in ggplot2 3.4.0.</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Rmarkdown_practical_lesson_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -357,22 +367,33 @@ window.Quarto = {
 <p>Example 6: Hide warnings and messages</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">data=</span>iris, <span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Sepal.Width, <span class="at">geom=</span><span class="st">"point"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> iris,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> Sepal.Length,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> Sepal.Width,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">geom =</span> <span class="st">"point"</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Rmarkdown_practical_lesson_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Example 7: Include a figure caption</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">data=</span>iris, <span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Sepal.Width, <span class="at">geom=</span><span class="st">"point"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> iris,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> Sepal.Length,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> Sepal.Width,</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">geom =</span> <span class="st">"point"</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="Rmarkdown_practical_lesson_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>Scatterplot of Sepal Width vs Sepal Length</figcaption>
 </figure>
 </div>
@@ -380,11 +401,16 @@ window.Quarto = {
 </div>
 <p>Example 8: Control figure size</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">data=</span>iris, <span class="at">x=</span>Sepal.Length, <span class="at">y=</span>Sepal.Width, <span class="at">geom=</span><span class="st">"point"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qplot</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> iris,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> Sepal.Length,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> Sepal.Width,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">geom =</span> <span class="st">"point"</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="Rmarkdown_practical_lesson_files/figure-html/unnamed-chunk-8-1.png" style="width:50.0%;height:50.0%" class="figure-img"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" style="width:50.0%;height:50.0%" class="figure-img"></p>
 <figcaption>Scatterplot of Sepal Width vs Sepal Length</figcaption>
 </figure>
 </div>
@@ -395,24 +421,40 @@ window.Quarto = {
 <h1>6. Mathematical Formulae</h1>
 <p>The general formula for the probability density function of the normal distribution with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma\)</span> is given by</p>
 <p><span class="math display">\[
-f_X(x) = \frac{1}{\sigma\sqrt{(2\pi)}} e^{-(x-\mu)^2/2\sigma^2}.
+f_X(x)=\frac{1}{\sigma\sqrt{(2\pi)}}e^{-(x-\mu)^2/2\sigma^2}.
 \]</span></p>
 <section id="more-examples" class="level2">
 <h2 class="anchored" data-anchor-id="more-examples">More examples</h2>
-<p>Example 1: Fraction ()</p>
-<p><span class="math display">\[\frac{a}{b}=\frac{c}{b}\]</span></p>
-<p>Example 2: Bold math symbols</p>
-<p><span class="math display">\[\mathbf{(X'X)^{-1}X'Y}\]</span></p>
-<p>Example 3: Summation, Superscript (^) and Subscript (_)</p>
-<p><span class="math display">\[\sum_{i=1}^{n}{x_i^2}\]</span></p>
-<p>Example 4: Equation with multiple lines</p>
-<p>Example 4.1:</p>
+<section id="example-1-fraction" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-fraction">Example 1: Fraction ()</h3>
+<p><span class="math display">\[
+\frac{a}{b}=\frac{c}{b}
+\]</span></p>
+</section>
+<section id="example-2-bold-math-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-bold-math-symbols">Example 2: Bold math symbols</h3>
+<p><span class="math display">\[
+\mathbf{(X'X)^{-1}X'Y}
+\]</span></p>
+</section>
+<section id="example-3-summation-superscript-and-subscript-_" class="level3">
+<h3 class="anchored" data-anchor-id="example-3-summation-superscript-and-subscript-_">Example 3: Summation, Superscript (^) and Subscript (_)</h3>
+<p><span class="math display">\[
+\sum_{i=1}^{n}{x_i^2}
+\]</span></p>
+</section>
+<section id="example-4-equation-with-multiple-lines" class="level3">
+<h3 class="anchored" data-anchor-id="example-4-equation-with-multiple-lines">Example 4: Equation with multiple lines</h3>
+<section id="example-4.1" class="level4">
+<h4 class="anchored" data-anchor-id="example-4.1">Example 4.1</h4>
 <p>[ <span class="math display">\[\begin{eqnarray}
 P(|X-\mu| &gt; k) &amp; = &amp; P(|X-\mu|^2 &gt; k^2)\\
 &amp; \leq &amp; \frac{\mathbb{E}\left[|X-\mu|^2\right]}{k^2}\\
 &amp; \leq &amp; \frac{\mathrm{Var}[X]}{k^2}
 \end{eqnarray}\]</span> ]</p>
-<p>Example 4.2:</p>
+</section>
+<section id="example-4.2" class="level4">
+<h4 class="anchored" data-anchor-id="example-4.2">Example 4.2</h4>
 <p>[ <span class="math display">\[\begin{eqnarray}
 X &amp; \sim &amp; \mathrm{N}(0,1)\\
 Y &amp; \sim &amp; \chi^2_{n-p}\\
@@ -420,16 +462,25 @@ R &amp; \equiv &amp; X/Y \sim t_{n-p}
 \end{eqnarray}\]</span> ]</p>
 </section>
 </section>
-<section id="example-5-parenthesis" class="level1">
-<h1>Example 5: Parenthesis ((…))</h1>
-<p><span class="math display">\[\left(\sum_{i=1}^{n}{i}\right)^2\]</span></p>
+<section id="example-5-parenthesis" class="level3">
+<h3 class="anchored" data-anchor-id="example-5-parenthesis">Example 5: Parenthesis ((…))</h3>
+<p><span class="math display">\[
+\left(\sum_{i=1}^{n}{i}\right)^2
+\]</span></p>
+</section>
+</section>
 </section>
 <section id="tables" class="level1">
 <h1>7. Tables</h1>
-<p><strong>Method 1</strong></p>
+<section id="method-1" class="level2">
+<h2 class="anchored" data-anchor-id="method-1">Method 1</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(iris[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,], <span class="at">caption=</span><span class="st">"A knitr kable 1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  iris[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, ],</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"A knitr kable 1"</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>A knitr kable 1</caption>
@@ -483,7 +534,10 @@ R &amp; \equiv &amp; X/Y \sim t_{n-p}
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">summary</span>(iris), <span class="at">caption=</span><span class="st">"A knitr kable 2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>(iris),</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"A knitr kable 2"</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>A knitr kable 2</caption>
@@ -558,35 +612,38 @@ R &amp; \equiv &amp; X/Y \sim t_{n-p}
 </table>
 </div>
 </div>
-<p><strong>Method 2</strong></p>
+</section>
+<section id="method-2" class="level2">
+<h2 class="anchored" data-anchor-id="method-2">Method 2</h2>
 <p>Colons can be used to align columns.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Column 1</th>
+<th style="text-align: left;">Column 1</th>
 <th style="text-align: center;">Column 2</th>
 <th style="text-align: right;">Column 3</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Tim</td>
+<td style="text-align: left;">Tim</td>
 <td style="text-align: center;">Positive</td>
 <td style="text-align: right;">USA</td>
 </tr>
 <tr class="even">
-<td>Jane</td>
+<td style="text-align: left;">Jane</td>
 <td style="text-align: center;">Negative</td>
 <td style="text-align: right;">UK</td>
 </tr>
 <tr class="odd">
-<td>Cathy</td>
+<td style="text-align: left;">Cathy</td>
 <td style="text-align: center;">Negative</td>
 <td style="text-align: right;">AUS</td>
 </tr>
 </tbody>
 </table>
-<p>There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
+<p>There must be at least three dashes separating each header cell.</p>
+<p>The outer pipes (<code>|</code>) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -608,6 +665,7 @@ R &amp; \equiv &amp; X/Y \sim t_{n-p}
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 <section id="include-an-external-image" class="level1">
 <h1>8. Include an External Image</h1>

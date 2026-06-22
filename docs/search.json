@@ -21,6 +21,104 @@
     "text": "More examples\nExample 1: Fraction ()\n\\[\\frac{a}{b}=\\frac{c}{b}\\]\nExample 2: Bold math symbols\n\\[\\mathbf{(X'X)^{-1}X'Y}\\]\nExample 3: Summation, Superscript (^) and Subscript (_)\n\\[\\sum_{i=1}^{n}{x_i^2}\\]\nExample 4: Equation with multiple lines\nExample 4.1:\n[ \\[\\begin{eqnarray}\nP(|X-\\mu| &gt; k) & = & P(|X-\\mu|^2 &gt; k^2)\\\\\n& \\leq & \\frac{\\mathbb{E}\\left[|X-\\mu|^2\\right]}{k^2}\\\\\n& \\leq & \\frac{\\mathrm{Var}[X]}{k^2}\n\\end{eqnarray}\\] ]\nExample 4.2:\n[ \\[\\begin{eqnarray}\nX & \\sim & \\mathrm{N}(0,1)\\\\\nY & \\sim & \\chi^2_{n-p}\\\\\nR & \\equiv & X/Y \\sim t_{n-p}\n\\end{eqnarray}\\] ]"
   },
   {
+    "objectID": "quarto/index.html",
+    "href": "quarto/index.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Headings are preceded by #. The number of # symbols at the beginning of a line indicates the level of heading (main section, subsection, sub-subsection, etc.).\nHere is an illustration."
+  },
+  {
+    "objectID": "quarto/index.html#h2-level",
+    "href": "quarto/index.html#h2-level",
+    "title": "Introduction to Quarto",
+    "section": "H2 level",
+    "text": "H2 level\nThis is header level 2\n\nH3 level\nThis is header level 3 and so on."
+  },
+  {
+    "objectID": "quarto/index.html#more-examples",
+    "href": "quarto/index.html#more-examples",
+    "title": "Introduction to Quarto",
+    "section": "More examples",
+    "text": "More examples\n\nExample 1: Fraction ()\n\\[\n\\frac{a}{b}=\\frac{c}{b}\n\\]\n\n\nExample 2: Bold math symbols\n\\[\n\\mathbf{(X'X)^{-1}X'Y}\n\\]\n\n\nExample 3: Summation, Superscript (^) and Subscript (_)\n\\[\n\\sum_{i=1}^{n}{x_i^2}\n\\]\n\n\nExample 4: Equation with multiple lines\n\nExample 4.1\n[ \\[\\begin{eqnarray}\nP(|X-\\mu| &gt; k) & = & P(|X-\\mu|^2 &gt; k^2)\\\\\n& \\leq & \\frac{\\mathbb{E}\\left[|X-\\mu|^2\\right]}{k^2}\\\\\n& \\leq & \\frac{\\mathrm{Var}[X]}{k^2}\n\\end{eqnarray}\\] ]\n\n\nExample 4.2\n[ \\[\\begin{eqnarray}\nX & \\sim & \\mathrm{N}(0,1)\\\\\nY & \\sim & \\chi^2_{n-p}\\\\\nR & \\equiv & X/Y \\sim t_{n-p}\n\\end{eqnarray}\\] ]\n\n\n\nExample 5: Parenthesis ((…))\n\\[\n\\left(\\sum_{i=1}^{n}{i}\\right)^2\n\\]"
+  },
+  {
+    "objectID": "quarto/index.html#method-1",
+    "href": "quarto/index.html#method-1",
+    "title": "Introduction to Quarto",
+    "section": "Method 1",
+    "text": "Method 1\n\nlibrary(knitr)\n\nkable(\n  iris[1:5, ],\n  caption = \"A knitr kable 1\"\n)\n\n\nA knitr kable 1\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n5.0\n3.6\n1.4\n0.2\nsetosa\n\n\n\n\n\n\nkable(\n  summary(iris),\n  caption = \"A knitr kable 2\"\n)\n\n\nA knitr kable 2\n\n\n\n\n\n\n\n\n\n\n\nSepal.Length\nSepal.Width\nPetal.Length\nPetal.Width\nSpecies\n\n\n\n\n\nMin. :4.300\nMin. :2.000\nMin. :1.000\nMin. :0.100\nsetosa :50\n\n\n\n1st Qu.:5.100\n1st Qu.:2.800\n1st Qu.:1.600\n1st Qu.:0.300\nversicolor:50\n\n\n\nMedian :5.800\nMedian :3.000\nMedian :4.350\nMedian :1.300\nvirginica :50\n\n\n\nMean :5.843\nMean :3.057\nMean :3.758\nMean :1.199\nNA\n\n\n\n3rd Qu.:6.400\n3rd Qu.:3.300\n3rd Qu.:5.100\n3rd Qu.:1.800\nNA\n\n\n\nMax. :7.900\nMax. :4.400\nMax. :6.900\nMax. :2.500\nNA"
+  },
+  {
+    "objectID": "quarto/index.html#method-2",
+    "href": "quarto/index.html#method-2",
+    "title": "Introduction to Quarto",
+    "section": "Method 2",
+    "text": "Method 2\nColons can be used to align columns.\n\n\n\nColumn 1\nColumn 2\nColumn 3\n\n\n\n\nTim\nPositive\nUSA\n\n\nJane\nNegative\nUK\n\n\nCathy\nNegative\nAUS\n\n\n\nThere must be at least three dashes separating each header cell.\nThe outer pipes (|) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.\n\n\n\nIndex No\nAssignment 1\nAssignment 2\n\n\n\n\nASXXX\napply\nFactors\n\n\n1\n2\n3"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "",
+    "text": "Dr Thiyanga S. Talagala"
+  },
+  {
+    "objectID": "index.html#lecturer-in-charge",
+    "href": "index.html#lecturer-in-charge",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "",
+    "text": "Dr Thiyanga S. Talagala"
+  },
+  {
+    "objectID": "index.html#email",
+    "href": "index.html#email",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Email",
+    "text": "Email\nttalagala@sjp.ac.lk"
+  },
+  {
+    "objectID": "index.html#policies-and-regulations",
+    "href": "index.html#policies-and-regulations",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Policies and regulations",
+    "text": "Policies and regulations\nTo access important information regarding the unit, please join the Google Classroom. You must carefully read the “Course Information” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information” slides."
+  },
+  {
+    "objectID": "index.html#course-outline",
+    "href": "index.html#course-outline",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Course outline",
+    "text": "Course outline\nAvailable on Google Classroom"
+  },
+  {
+    "objectID": "index.html#weekly-schedule-lectures",
+    "href": "index.html#weekly-schedule-lectures",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Weekly schedule: Lectures 👩‍🏫",
+    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nApril 23, 2026\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nApril 30, 2026\nData Structures in R: Vector creation\n\n\n\n\n\n3\nMay 7, 2026\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\nMay 14, 2026\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\nMay 21, 2026/May 28, 2026\nUser-defined functions\n\n\n\n\n\n\n\n\nJune 4, 2026\nControl Structures\nJune 11, 2026\nIntroduction to the tidyverse\nJune 18, 2026\ntidy verbs\ndplyr verbs\nIntroduction to ggplot2\nJune 22, 2026\nIntroduction to quarto"
+  },
+  {
+    "objectID": "index.html#mid-semester-examination",
+    "href": "index.html#mid-semester-examination",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Mid-Semester Examination",
+    "text": "Mid-Semester Examination\nJuly 9, 2026\nContent: From April 23, 2026 to May 21, 2026 (May 21, 2026 lecture included)\nYou are allow to bring 1 A4 sheet to the exam only."
+  },
+  {
+    "objectID": "index.html#weekly-schedule-computer-practical",
+    "href": "index.html#weekly-schedule-computer-practical",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Weekly schedule: Computer Practical 🖥️",
+    "text": "Weekly schedule: Computer Practical 🖥️\n\nMonday, 8am - 9.45am\nMonday, 3pm - 5pm\nPlease do not swap your allocated slots. Kindly attend at your stipulated time."
+  },
+  {
+    "objectID": "index.html#r-and-rstudio-installation-video-links",
+    "href": "index.html#r-and-rstudio-installation-video-links",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "R and RStudio Installation: Video Links",
+    "text": "R and RStudio Installation: Video Links\nInstalling R\nInstalling RStudio"
+  },
+  {
     "objectID": "index25.html",
     "href": "index25.html",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
@@ -79,69 +177,6 @@
   {
     "objectID": "index25.html#r-and-rstudio-installation-video-links",
     "href": "index25.html#r-and-rstudio-installation-video-links",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "R and RStudio Installation: Video Links",
-    "text": "R and RStudio Installation: Video Links\nInstalling R\nInstalling RStudio"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "",
-    "text": "Dr Thiyanga S. Talagala"
-  },
-  {
-    "objectID": "index.html#lecturer-in-charge",
-    "href": "index.html#lecturer-in-charge",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "",
-    "text": "Dr Thiyanga S. Talagala"
-  },
-  {
-    "objectID": "index.html#email",
-    "href": "index.html#email",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Email",
-    "text": "Email\nttalagala@sjp.ac.lk"
-  },
-  {
-    "objectID": "index.html#policies-and-regulations",
-    "href": "index.html#policies-and-regulations",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Policies and regulations",
-    "text": "Policies and regulations\nTo access important information regarding the unit, please join the Google Classroom. You must carefully read the “Course Information” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information” slides."
-  },
-  {
-    "objectID": "index.html#course-outline",
-    "href": "index.html#course-outline",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Course outline",
-    "text": "Course outline\nAvailable on Google Classroom"
-  },
-  {
-    "objectID": "index.html#weekly-schedule-lectures",
-    "href": "index.html#weekly-schedule-lectures",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Weekly schedule: Lectures 👩‍🏫",
-    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nApril 23, 2026\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nApril 30, 2026\nData Structures in R: Vector creation\n\n\n\n\n\n3\nMay 7, 2026\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\nMay 14, 2026\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\nMay 21, 2026\nUser-defined functions"
-  },
-  {
-    "objectID": "index.html#mid-semester-examination",
-    "href": "index.html#mid-semester-examination",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Mid-Semester Examination",
-    "text": "Mid-Semester Examination\nJuly 9, 2026\nContent: From April 23, 2026 to May 21, 2026 (May 21, 2026 lecture included)"
-  },
-  {
-    "objectID": "index.html#weekly-schedule-computer-practical",
-    "href": "index.html#weekly-schedule-computer-practical",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Weekly schedule: Computer Practical 🖥️",
-    "text": "Weekly schedule: Computer Practical 🖥️\n\nMonday, 8am - 9.45am\nMonday, 3pm - 5pm\nPlease do not swap your allocated slots. Kindly attend at your stipulated time."
-  },
-  {
-    "objectID": "index.html#r-and-rstudio-installation-video-links",
-    "href": "index.html#r-and-rstudio-installation-video-links",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
     "section": "R and RStudio Installation: Video Links",
     "text": "R and RStudio Installation: Video Links\nInstalling R\nInstalling RStudio"

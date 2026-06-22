@@ -23,7 +23,7 @@ Available on Google Classroom
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 library(tidyverse)
 wkno <- c(1, 2, 3, 4, 5)
-date <- c("April 23, 2026", "April 30, 2026", "May 7, 2026", "May 14, 2026", "May 21, 2026")
+date <- c("April 23, 2026", "April 30, 2026", "May 7, 2026", "May 14, 2026", "May 21, 2026/May 28, 2026")
 Topic <- c("[Introduction to R Programming](https://hellor.netlify.app/2021/week1/l12021#1)", "[Data Structures in R: Vector creation](https://hellor.netlify.app/slides/l22021#1)",
            "[Built-in functions in R: Anatomy](https://hellor2023.netlify.app/slides/l32021#1)",
            "[Working with built-in functions in R](https://hellor.netlify.app/slides/l42022#1)-removed qplot (qplot() is now deprecated)",
@@ -37,11 +37,37 @@ colnames(df) <- c("Week No.", "Date", "Topic", "Cheatsheet", "Reading", "Exercis
 df |> knitr::kable()
 ```
 
+
+
+**June 4, 2026**
+
+[Control Structures](https://hellor.netlify.app/slides/l62021#1)
+
+**June 11, 2026**
+
+[Introduction to the tidyverse](https://hellor.netlify.app/slides/l72021#1)
+
+**June 18, 2026**
+
+[tidy verbs](https://hellor.netlify.app/slides/l102021#1)
+
+[dplyr verbs](https://hellor.netlify.app/slides/l112021#1)
+
+
+[Introduction to ggplot2](https://hellor.netlify.app/slides/l122021#1)
+
+
+**June 22, 2026**
+
+[Introduction to quarto](/quarto/index.qmd)
+
 ## Mid-Semester Examination
 
 July 9, 2026
 
 Content: From April 23, 2026 to May 21, 2026 (May 21, 2026 lecture included)
+
+You are allow to bring 1 A4 sheet to the exam only.
 
 ## Weekly schedule: Computer Practical 🖥️
 
