@@ -95,7 +95,7 @@
     "href": "index.html#weekly-schedule-lectures",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
     "section": "Weekly schedule: Lectures 👩‍🏫",
-    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nApril 23, 2026\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nApril 30, 2026\nData Structures in R: Vector creation\n\n\n\n\n\n3\nMay 7, 2026\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\nMay 14, 2026\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\nMay 21, 2026/May 28, 2026\nUser-defined functions\n\n\n\n\n\n\n\n\nJune 4, 2026\nControl Structures\nJune 11, 2026\nIntroduction to the tidyverse\nJune 18, 2026\ntidy verbs\ndplyr verbs\nIntroduction to ggplot2\nJune 22, 2026\nIntroduction to quarto"
+    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nApril 23, 2026\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nApril 30, 2026\nData Structures in R: Vector creation\n\n\n\n\n\n3\nMay 7, 2026\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\nMay 14, 2026\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\nMay 21, 2026/May 28, 2026\nUser-defined functions\n\n\n\n\n\n\n\n\nJune 4, 2026\nControl Structures\nJune 11, 2026\nIntroduction to the tidyverse\nJune 18, 2026\ntidy verbs\ndplyr verbs\nIntroduction to ggplot2\nJune 22, 2026\nIntroduction to quarto\nJuly 9, 2026\nMid-semester Examination\nJuly 16, 2026\nRegression Analysis"
   },
   {
     "objectID": "index.html#mid-semester-examination",

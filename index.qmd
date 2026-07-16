@@ -37,8 +37,6 @@ colnames(df) <- c("Week No.", "Date", "Topic", "Cheatsheet", "Reading", "Exercis
 df |> knitr::kable()
 ```
 
-
-
 **June 4, 2026**
 
 [Control Structures](https://hellor.netlify.app/slides/l62021#1)
@@ -53,13 +51,19 @@ df |> knitr::kable()
 
 [dplyr verbs](https://hellor.netlify.app/slides/l112021#1)
 
-
 [Introduction to ggplot2](https://hellor.netlify.app/slides/l122021#1)
-
 
 **June 22, 2026**
 
 [Introduction to quarto](/quarto/index.qmd)
+
+**July 9, 2026**
+
+Mid-semester Examination
+
+**July 16, 2026**
+
+[Regression Analysis](https://hellor.netlify.app/slides/l132021#1)
 
 ## Mid-Semester Examination
 
