@@ -56,69 +56,6 @@
     "text": "Method 2\nColons can be used to align columns.\n\n\n\nColumn 1\nColumn 2\nColumn 3\n\n\n\n\nTim\nPositive\nUSA\n\n\nJane\nNegative\nUK\n\n\nCathy\nNegative\nAUS\n\n\n\nThere must be at least three dashes separating each header cell.\nThe outer pipes (|) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.\n\n\n\nIndex No\nAssignment 1\nAssignment 2\n\n\n\n\nASXXX\napply\nFactors\n\n\n1\n2\n3"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "",
-    "text": "Dr Thiyanga S. Talagala"
-  },
-  {
-    "objectID": "index.html#lecturer-in-charge",
-    "href": "index.html#lecturer-in-charge",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "",
-    "text": "Dr Thiyanga S. Talagala"
-  },
-  {
-    "objectID": "index.html#email",
-    "href": "index.html#email",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Email",
-    "text": "Email\nttalagala@sjp.ac.lk"
-  },
-  {
-    "objectID": "index.html#policies-and-regulations",
-    "href": "index.html#policies-and-regulations",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Policies and regulations",
-    "text": "Policies and regulations\nTo access important information regarding the unit, please join the Google Classroom. You must carefully read the “Course Information” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information” slides."
-  },
-  {
-    "objectID": "index.html#course-outline",
-    "href": "index.html#course-outline",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Course outline",
-    "text": "Course outline\nAvailable on Google Classroom"
-  },
-  {
-    "objectID": "index.html#weekly-schedule-lectures",
-    "href": "index.html#weekly-schedule-lectures",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Weekly schedule: Lectures 👩‍🏫",
-    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nApril 23, 2026\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nApril 30, 2026\nData Structures in R: Vector creation\n\n\n\n\n\n3\nMay 7, 2026\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\nMay 14, 2026\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\nMay 21, 2026/May 28, 2026\nUser-defined functions\n\n\n\n\n\n\n\n\nJune 4, 2026\nControl Structures\nJune 11, 2026\nIntroduction to the tidyverse\nJune 18, 2026\ntidy verbs\ndplyr verbs\nIntroduction to ggplot2\nJune 22, 2026\nIntroduction to quarto\nJuly 9, 2026\nMid-semester Examination\nJuly 16, 2026\nRegression Analysis"
-  },
-  {
-    "objectID": "index.html#mid-semester-examination",
-    "href": "index.html#mid-semester-examination",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Mid-Semester Examination",
-    "text": "Mid-Semester Examination\nJuly 9, 2026\nContent: From April 23, 2026 to May 21, 2026 (May 21, 2026 lecture included)\nYou are allow to bring 1 A4 sheet to the exam only."
-  },
-  {
-    "objectID": "index.html#weekly-schedule-computer-practical",
-    "href": "index.html#weekly-schedule-computer-practical",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "Weekly schedule: Computer Practical 🖥️",
-    "text": "Weekly schedule: Computer Practical 🖥️\n\nMonday, 8am - 9.45am\nMonday, 3pm - 5pm\nPlease do not swap your allocated slots. Kindly attend at your stipulated time."
-  },
-  {
-    "objectID": "index.html#r-and-rstudio-installation-video-links",
-    "href": "index.html#r-and-rstudio-installation-video-links",
-    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
-    "section": "R and RStudio Installation: Video Links",
-    "text": "R and RStudio Installation: Video Links\nInstalling R\nInstalling RStudio"
-  },
-  {
     "objectID": "index25.html",
     "href": "index25.html",
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
@@ -180,6 +117,90 @@
     "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
     "section": "R and RStudio Installation: Video Links",
     "text": "R and RStudio Installation: Video Links\nInstalling R\nInstalling RStudio"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "",
+    "text": "Dr Thiyanga S. Talagala"
+  },
+  {
+    "objectID": "index.html#lecturer-in-charge",
+    "href": "index.html#lecturer-in-charge",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "",
+    "text": "Dr Thiyanga S. Talagala"
+  },
+  {
+    "objectID": "index.html#email",
+    "href": "index.html#email",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Email",
+    "text": "Email\nttalagala@sjp.ac.lk"
+  },
+  {
+    "objectID": "index.html#policies-and-regulations",
+    "href": "index.html#policies-and-regulations",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Policies and regulations",
+    "text": "Policies and regulations\nTo access important information regarding the unit, please join the Google Classroom. You must carefully read the “Course Information” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information” slides."
+  },
+  {
+    "objectID": "index.html#course-outline",
+    "href": "index.html#course-outline",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Course outline",
+    "text": "Course outline\nAvailable on Google Classroom"
+  },
+  {
+    "objectID": "index.html#weekly-schedule-lectures",
+    "href": "index.html#weekly-schedule-lectures",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Weekly schedule: Lectures 👩‍🏫",
+    "text": "Weekly schedule: Lectures 👩‍🏫\n\n\n\n\n\nWeek No.\nDate\nTopic\nCheatsheet\nReading\nExercise\n\n\n\n\n1\nApril 23, 2026\nIntroduction to R Programming\ncheatsheet\n\nExercise 1.8\n\n\n2\nApril 30, 2026\nData Structures in R: Vector creation\n\n\n\n\n\n3\nMay 7, 2026\nBuilt-in functions in R: Anatomy\n\n\n\n\n\n4\nMay 14, 2026\nWorking with built-in functions in R-removed qplot (qplot() is now deprecated)\n\n\n\n\n\n5\nMay 21, 2026/May 28, 2026\nUser-defined functions\n\n\n\n\n\n\n\n\nJune 4, 2026\nControl Structures\nJune 11, 2026\nIntroduction to the tidyverse\nJune 18, 2026\ntidy verbs\ndplyr verbs\nIntroduction to ggplot2\nJune 22, 2026\nIntroduction to quarto\nJuly 9, 2026\nMid-semester Examination\nJuly 16, 2026\nStatistical Inference\nPractical\nJuly 28, 2026\nRegression Analysis"
+  },
+  {
+    "objectID": "index.html#mid-semester-examination",
+    "href": "index.html#mid-semester-examination",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Mid-Semester Examination",
+    "text": "Mid-Semester Examination\nJuly 9, 2026\nContent: From April 23, 2026 to May 21, 2026 (May 21, 2026 lecture included)\nYou are allow to bring 1 A4 sheet to the exam only."
+  },
+  {
+    "objectID": "index.html#weekly-schedule-computer-practical",
+    "href": "index.html#weekly-schedule-computer-practical",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "Weekly schedule: Computer Practical 🖥️",
+    "text": "Weekly schedule: Computer Practical 🖥️\n\nMonday, 8am - 9.45am\nMonday, 3pm - 5pm\nPlease do not swap your allocated slots. Kindly attend at your stipulated time."
+  },
+  {
+    "objectID": "index.html#r-and-rstudio-installation-video-links",
+    "href": "index.html#r-and-rstudio-installation-video-links",
+    "title": "STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R",
+    "section": "R and RStudio Installation: Video Links",
+    "text": "R and RStudio Installation: Video Links\nInstalling R\nInstalling RStudio"
+  },
+  {
+    "objectID": "practicaljuly16.html",
+    "href": "practicaljuly16.html",
+    "title": "Statistical Inference Questions Using the Penguins Dataset",
+    "section": "",
+    "text": "install.packages(\"palmerpenguins\")\nlibrary(palmerpenguins)\n\ndata(\"penguins\")\nhead(penguins)"
+  },
+  {
+    "objectID": "practicaljuly16.html#dataset",
+    "href": "practicaljuly16.html#dataset",
+    "title": "Statistical Inference Questions Using the Penguins Dataset",
+    "section": "",
+    "text": "install.packages(\"palmerpenguins\")\nlibrary(palmerpenguins)\n\ndata(\"penguins\")\nhead(penguins)"
+  },
+  {
+    "objectID": "practicaljuly16.html#questions",
+    "href": "practicaljuly16.html#questions",
+    "title": "Statistical Inference Questions Using the Penguins Dataset",
+    "section": "Questions",
+    "text": "Questions\n\nA researcher claims that male penguins have a higher mean body mass than female penguins. Is there sufficient statistical evidence to support this claim?\nIs there a significant difference in the mean body mass among different penguin species?\nIf there is a significant difference in body mass among species, which species pairs have significantly different mean body masses?\n\nHelp: Tukey’s HSD test\n\nIs there a significant linear relationship between flipper length and body mass of penguins?"
   },
   {
     "objectID": "rmarkdown/lesson2.html",

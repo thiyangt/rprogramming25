@@ -1,0 +1,26 @@
+---
+title: "Statistical Inference Questions Using the Penguins Dataset"
+---
+
+
+## Dataset
+
+```r
+install.packages("palmerpenguins")
+library(palmerpenguins)
+
+data("penguins")
+head(penguins)
+```
+
+## Questions
+
+1. A researcher claims that male penguins have a higher mean body mass than female penguins. Is there sufficient statistical evidence to support this claim?
+
+2. Is there a significant difference in the mean body mass among different penguin species?
+
+3. If there is a significant difference in body mass among species, which species pairs have significantly different mean body masses?
+
+Help: Tukey's HSD test
+
+4. Is there a significant linear relationship between flipper length and body mass of penguins?

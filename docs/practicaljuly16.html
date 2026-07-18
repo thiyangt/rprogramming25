@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R – Programming and Data Analysis with R</title>
+<title>Statistical Inference Questions Using the Penguins Dataset – Programming and Data Analysis with R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -102,7 +137,7 @@ gtag('config', 'G-9MYT25HLDD', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -125,14 +160,8 @@ gtag('config', 'G-9MYT25HLDD', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecturer-in-charge" id="toc-lecturer-in-charge" class="nav-link active" data-scroll-target="#lecturer-in-charge">Lecturer-in-charge</a></li>
-  <li><a href="#email" id="toc-email" class="nav-link" data-scroll-target="#email">Email</a></li>
-  <li><a href="#policies-and-regulations" id="toc-policies-and-regulations" class="nav-link" data-scroll-target="#policies-and-regulations">Policies and regulations</a></li>
-  <li><a href="#course-outline" id="toc-course-outline" class="nav-link" data-scroll-target="#course-outline">Course outline</a></li>
-  <li><a href="#weekly-schedule-lectures" id="toc-weekly-schedule-lectures" class="nav-link" data-scroll-target="#weekly-schedule-lectures">Weekly schedule: Lectures 👩‍🏫</a></li>
-  <li><a href="#mid-semester-examination" id="toc-mid-semester-examination" class="nav-link" data-scroll-target="#mid-semester-examination">Mid-Semester Examination</a></li>
-  <li><a href="#weekly-schedule-computer-practical" id="toc-weekly-schedule-computer-practical" class="nav-link" data-scroll-target="#weekly-schedule-computer-practical">Weekly schedule: Computer Practical 🖥️</a></li>
-  <li><a href="#r-and-rstudio-installation-video-links" id="toc-r-and-rstudio-installation-video-links" class="nav-link" data-scroll-target="#r-and-rstudio-installation-video-links">R and RStudio Installation: Video Links</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -141,7 +170,7 @@ gtag('config', 'G-9MYT25HLDD', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">STA 326 2.0/ ASP 454 2.0 Programming and Data Analysis with R</h1>
+<h1 class="title">Statistical Inference Questions Using the Penguins Dataset</h1>
 </div>
 
 
@@ -158,119 +187,25 @@ gtag('config', 'G-9MYT25HLDD', { 'anonymize_ip': true});
 </header>
 
 
-<section id="lecturer-in-charge" class="level2">
-<h2 class="anchored" data-anchor-id="lecturer-in-charge">Lecturer-in-charge</h2>
-<p><a href="https://thiyanga.netlify.app/">Dr Thiyanga S. Talagala</a></p>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"penguins"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(penguins)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="email" class="level2">
-<h2 class="anchored" data-anchor-id="email">Email</h2>
-<p>ttalagala@sjp.ac.lk</p>
-</section>
-<section id="policies-and-regulations" class="level2">
-<h2 class="anchored" data-anchor-id="policies-and-regulations">Policies and regulations</h2>
-<p>To access important information regarding the unit, please join the Google Classroom. You must carefully read the “<a href="https://hellor.netlify.app/2021/week0onsite#1">Course Information</a>” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information” slides.</p>
-</section>
-<section id="course-outline" class="level2">
-<h2 class="anchored" data-anchor-id="course-outline">Course outline</h2>
-<p>Available on Google Classroom</p>
-</section>
-<section id="weekly-schedule-lectures" class="level2">
-<h2 class="anchored" data-anchor-id="weekly-schedule-lectures">Weekly schedule: Lectures 👩‍🏫</h2>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: right;">Week No.</th>
-<th style="text-align: left;">Date</th>
-<th style="text-align: left;">Topic</th>
-<th style="text-align: left;">Cheatsheet</th>
-<th style="text-align: left;">Reading</th>
-<th style="text-align: left;">Exercise</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">April 23, 2026</td>
-<td style="text-align: left;"><a href="https://hellor.netlify.app/2021/week1/l12021#1">Introduction to R Programming</a></td>
-<td style="text-align: left;"><a href="https://hellor.netlify.app/cheatsheets/baser.pdf">cheatsheet</a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><a href="https://thiyangt.github.io/rbook/intro.html">Exercise 1.8</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">April 30, 2026</td>
-<td style="text-align: left;"><a href="https://hellor.netlify.app/slides/l22021#1">Data Structures in R: Vector creation</a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">May 7, 2026</td>
-<td style="text-align: left;"><a href="https://hellor2023.netlify.app/slides/l32021#1">Built-in functions in R: Anatomy</a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">May 14, 2026</td>
-<td style="text-align: left;"><a href="https://hellor.netlify.app/slides/l42022#1">Working with built-in functions in R</a>-removed qplot (qplot() is now deprecated)</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">May 21, 2026/May 28, 2026</td>
-<td style="text-align: left;"><a href="https://hellor.netlify.app/slides/l52021#1">User-defined functions</a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><strong>June 4, 2026</strong></p>
-<p><a href="https://hellor.netlify.app/slides/l62021#1">Control Structures</a></p>
-<p><strong>June 11, 2026</strong></p>
-<p><a href="https://hellor.netlify.app/slides/l72021#1">Introduction to the tidyverse</a></p>
-<p><strong>June 18, 2026</strong></p>
-<p><a href="https://hellor.netlify.app/slides/l102021#1">tidy verbs</a></p>
-<p><a href="https://hellor.netlify.app/slides/l112021#1">dplyr verbs</a></p>
-<p><a href="https://hellor.netlify.app/slides/l122021#1">Introduction to ggplot2</a></p>
-<p><strong>June 22, 2026</strong></p>
-<p><a href="./quarto/index.html">Introduction to quarto</a></p>
-<p><strong>July 9, 2026</strong></p>
-<p>Mid-semester Examination</p>
-<p><strong>July 16, 2026</strong></p>
-<p><a href="https://hellor.netlify.app/slides/Hypothesis_testing.pdf">Statistical Inference</a></p>
-<p><a href="practicaljuly16">Practical</a></p>
-<p><strong>July 28, 2026</strong></p>
-<p><a href="https://hellor.netlify.app/slides/l132021#1">Regression Analysis</a></p>
-</section>
-<section id="mid-semester-examination" class="level2">
-<h2 class="anchored" data-anchor-id="mid-semester-examination">Mid-Semester Examination</h2>
-<p>July 9, 2026</p>
-<p>Content: From April 23, 2026 to May 21, 2026 (May 21, 2026 lecture included)</p>
-<p>You are allow to bring 1 A4 sheet to the exam only.</p>
-</section>
-<section id="weekly-schedule-computer-practical" class="level2">
-<h2 class="anchored" data-anchor-id="weekly-schedule-computer-practical">Weekly schedule: Computer Practical 🖥️</h2>
-<ul>
-<li><p>Monday, 8am - 9.45am</p></li>
-<li><p>Monday, 3pm - 5pm</p></li>
-<li><p>Please do not swap your allocated slots. Kindly attend at your stipulated time.</p></li>
-</ul>
-<pre><code></code></pre>
-</section>
-<section id="r-and-rstudio-installation-video-links" class="level2">
-<h2 class="anchored" data-anchor-id="r-and-rstudio-installation-video-links">R and RStudio Installation: Video Links</h2>
-<p><a href="https://www.youtube.com/watch?v=aRwxsAEoRzs&amp;list=PL7Bw8wPdOZXlEVRbvYmP59SapfjfOy5pS&amp;index=1">Installing R</a></p>
-<p><a href="https://www.youtube.com/watch?v=Q1NRj2Dzdn0&amp;t=18s">Installing RStudio</a></p>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<ol type="1">
+<li><p>A researcher claims that male penguins have a higher mean body mass than female penguins. Is there sufficient statistical evidence to support this claim?</p></li>
+<li><p>Is there a significant difference in the mean body mass among different penguin species?</p></li>
+<li><p>If there is a significant difference in body mass among species, which species pairs have significantly different mean body masses?</p></li>
+</ol>
+<p>Help: Tukey’s HSD test</p>
+<ol start="4" type="1">
+<li>Is there a significant linear relationship between flipper length and body mass of penguins?</li>
+</ol>
 
 
 </section>

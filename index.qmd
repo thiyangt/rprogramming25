@@ -63,7 +63,16 @@ Mid-semester Examination
 
 **July 16, 2026**
 
+[Statistical Inference](https://hellor.netlify.app/slides/Hypothesis_testing.pdf)
+
+[Practical](practicaljuly16)
+
+
+**July 28, 2026**
+
 [Regression Analysis](https://hellor.netlify.app/slides/l132021#1)
+
+
 
 ## Mid-Semester Examination
 
