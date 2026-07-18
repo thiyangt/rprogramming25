@@ -15,6 +15,10 @@ head(penguins)
 
 ## Questions
 
+Using the Palmer Penguins dataset, investigate the following research question. Before answering the research question, perform a suitable exploratory data analysis (EDA) using appropriate graphical and numerical summaries.  Write the hypotheses you need to test and apply an appropriate statistical inference method to test the research hypothesis. Report and interpret the results, including relevant assumptions, test statistics, p-values, and confidence intervals where appropriate. Finally, check whether the statistical conclusions are consistent with the patterns observed in the exploratory data analysis.
+
+Use $\alpha$ as 0.05.
+
 1. A researcher claims that male penguins have a higher mean body mass than female penguins. Is there sufficient statistical evidence to support this claim?
 
 2. Is there a significant difference in the mean body mass among different penguin species?
