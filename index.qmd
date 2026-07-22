@@ -68,11 +68,9 @@ Mid-semester Examination
 [Practical](practicaljuly16)
 
 
-**July 28, 2026**
+**July 23, 2026**
 
 [Regression Analysis](https://hellor.netlify.app/slides/l132021#1)
-
-
 
 ## Mid-Semester Examination
 
@@ -90,8 +88,7 @@ You are allow to bring 1 A4 sheet to the exam only.
 
 -   Please do not swap your allocated slots. Kindly attend at your stipulated time.
 
-```         
-```
+
 
 ## R and RStudio Installation: Video Links
 
